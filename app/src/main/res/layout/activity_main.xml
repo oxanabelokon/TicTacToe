@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="10dp"
     android:orientation="vertical"
+    android:layout_margin="10dp"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -14,24 +14,22 @@
         android:layout_marginBottom="20dp">
 
         <TextView
-            android:id="@+id/textView_X"
+            android:id="@+id/textView_player1Display"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:fontFamily="sans-serif-black"
-            android:text="Player 1:"
-            android:textAlignment="textStart"
+            android:textAlignment="center"
             android:textColor="#000000"
             android:textSize="24sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView_0"
+            android:id="@+id/textView_player2Display"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Player 2:"
-            android:textAlignment="textEnd"
+            android:textAlignment="center"
             android:textColor="#000000"
             android:textSize="24sp"
             android:textStyle="bold" />
@@ -52,8 +50,8 @@
             <ImageView
                 android:id="@+id/imageView_00"
                 android:layout_width="wrap_content"
-                android:layout_height="120dp"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:layout_height="120dp" />
 
             <View
                 android:layout_width="6dp"
@@ -63,8 +61,8 @@
             <ImageView
                 android:id="@+id/imageView_01"
                 android:layout_width="wrap_content"
-                android:layout_height="120dp"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:layout_height="120dp" />
 
             <View
                 android:layout_width="6dp"
@@ -74,15 +72,15 @@
             <ImageView
                 android:id="@+id/imageView_02"
                 android:layout_width="wrap_content"
-                android:layout_height="120dp"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:layout_height="120dp" />
         </LinearLayout>
     </GridLayout>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="6dp"
-        android:background="#86838A" />
+        android:background="#86838A"/>
 
     <GridLayout
         android:layout_width="match_parent"
@@ -97,8 +95,8 @@
             <ImageView
                 android:id="@+id/imageView_10"
                 android:layout_width="wrap_content"
-                android:layout_height="120dp"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:layout_height="120dp" />
 
             <View
                 android:layout_width="6dp"
@@ -108,9 +106,8 @@
             <ImageView
                 android:id="@+id/imageView_11"
                 android:layout_width="wrap_content"
-                android:layout_height="120dp"
-                android:layout_weight="1" />
-
+                android:layout_weight="1"
+                android:layout_height="120dp" />
             <View
                 android:layout_width="6dp"
                 android:layout_height="match_parent"
@@ -119,15 +116,15 @@
             <ImageView
                 android:id="@+id/imageView_12"
                 android:layout_width="wrap_content"
-                android:layout_height="120dp"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:layout_height="120dp" />
         </LinearLayout>
     </GridLayout>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="6dp"
-        android:background="#86838A" />
+        android:background="#86838A"/>
 
     <GridLayout
         android:layout_width="match_parent"
@@ -142,9 +139,8 @@
             <ImageView
                 android:id="@+id/imageView_20"
                 android:layout_width="wrap_content"
-                android:layout_height="120dp"
-                android:layout_weight="1" />
-
+                android:layout_weight="1"
+                android:layout_height="120dp" />
             <View
                 android:layout_width="6dp"
                 android:layout_height="match_parent"
@@ -153,9 +149,8 @@
             <ImageView
                 android:id="@+id/imageView_21"
                 android:layout_width="wrap_content"
-                android:layout_height="120dp"
-                android:layout_weight="1" />
-
+                android:layout_weight="1"
+                android:layout_height="120dp" />
             <View
                 android:layout_width="6dp"
                 android:layout_height="match_parent"
@@ -164,23 +159,35 @@
             <ImageView
                 android:id="@+id/imageView_22"
                 android:layout_width="wrap_content"
-                android:layout_height="120dp"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:layout_height="120dp" />
         </LinearLayout>
     </GridLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:gravity="center">
+
 
         <Button
-            android:layout_width="142dp"
-            android:layout_height="62dp"
-            android:text="RESET"
-            android:textSize="24sp" />
+            android:id="@+id/btn_setupPlayers"
+            android:layout_width="216dp"
+            android:layout_height="68dp"
+            android:text="SETUP PLAYERS"
+            android:onClick="setupPlayersClick"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/button"/>
+
+        <Button
+            android:id="@+id/btn_Start"
+            android:layout_width="216dp"
+            android:layout_height="68dp"
+            android:background="@drawable/button"
+            android:text="START NEW GAME"
+            android:textSize="18sp" />
 
     </LinearLayout>
 
